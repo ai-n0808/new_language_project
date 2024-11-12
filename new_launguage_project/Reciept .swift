@@ -7,10 +7,29 @@
 
 import SwiftUI
 
+
+//class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+//    @IBAction func buttonClick(_ sender: Any) {
+//        let imagePickerController = UIImagePickerController()
+//
+//    }
+//}
+
+
+
 struct Reciept_: View {
-    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading){
+//                LinearGradient(gradient:
+//                                Gradient(colors: [ .white, .light, .dark]),
+//                               startPoint: .topLeading,
+//                               endPoint: .bottomTrailing)
+//                .ignoresSafeArea()
+                Text("Keep your reciept here📄")
+                .font((.system(size: 30)))
+                .padding(.bottom, 700)
+            }
+        
     }
 }
 

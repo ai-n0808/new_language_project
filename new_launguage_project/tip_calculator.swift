@@ -21,14 +21,14 @@ struct tip_calculator: View {
                 HStack{
                     Image(systemName: "dollarsign.circle")
                         .imageScale(.large)
-                        .foregroundStyle(.orange)
+                        .foregroundStyle(.myblue)
                         .font(.title)
                     Text("Tip Calculator")
                         .font(.title)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Image(systemName: "dollarsign.circle")
                         .imageScale(.large)
-                        .foregroundStyle(.orange)
+                        .foregroundStyle(.myblue)
                         .font(.title)
                 }
                 
