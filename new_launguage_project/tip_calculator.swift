@@ -17,6 +17,8 @@ struct tip_calculator: View {
                                startPoint: .topLeading,
                                endPoint: .bottomTrailing)
                     .ignoresSafeArea()
+            
+            
             VStack {
                 HStack{
                     Image(systemName: "dollarsign.circle")

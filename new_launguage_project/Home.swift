@@ -14,9 +14,14 @@ struct Home: View {
                             Gradient(colors: [ .white, .light, .dark]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
-            Text("Welcome Your calculator ")
-                .font(.title)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            VStack {
+                Text("Welcome to your calculator")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Image(systemName: "figure.gymnastics")
+                    .font(.system(size: 80))
+                    .padding(.top)
+            }
         }
         .ignoresSafeArea()
     }
