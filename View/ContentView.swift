@@ -26,8 +26,8 @@ struct ContentView: View {
                     Tab ("Split", systemImage:"person.2.fill") {
                         BillSplitterView()
                     }
-                    Tab ("Talk", systemImage: "waveform.circle.fill") {
-                        
+                    Tab ("Note", systemImage: "text.book.closed.fill") {
+                        DebtTrackerView()
                     }
                 }
             }
