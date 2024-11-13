@@ -20,14 +20,14 @@ struct ContentView: View {
                     Tab ("Home", systemImage: "homekit") {
                         Home()
                     }
-                    Tab ("Tax", systemImage: "yensign.square.fill") {
+                    Tab ("Calculator", systemImage: "list.clipboard.fill") {
                         CalculatorView()
-                    }
-                    Tab ("Tip", systemImage: "dollarsign.square.fill") {
-                        tip_calculator()
                     }
                     Tab ("Split", systemImage:"person.2.fill") {
                         BillSplitterView()
+                    }
+                    Tab ("Talk", systemImage: "waveform.circle.fill") {
+                        
                     }
                 }
             }

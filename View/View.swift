@@ -21,16 +21,19 @@ struct CalculatorView: View {
             .ignoresSafeArea()
             
             VStack {
+                Spacer()
+                if isTaxCalculator {
+                    TaxCalculator(total: $total, percentage: $percentage)
+                } else {
+                    tip_calculator()
+                }
+                Spacer()
                 Toggle(isOn: $isTaxCalculator) {
                     Text("Switch to \(isTaxCalculator ? "Tip" : "Tax") Calculator")
                 }
                 .padding()
-                
-                if isTaxCalculator {
-                    TaxCalculator(total: $total, percentage: $percentage)
-                } else {
-                    TaxCalculator(total: $total, percentage: $percentage)
-                }
+                .tint(.myblue)
+
             }
             .padding()
         }

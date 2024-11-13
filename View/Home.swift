@@ -15,12 +15,12 @@ struct Home: View {
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
             VStack {
-                Text("Welcome to your calculator")
-                    .font(.title)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Image(systemName: "figure.gymnastics")
                     .font(.system(size: 80))
                     .padding(.top)
+                Text("Welcome to your calculator")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             }
         }
         .ignoresSafeArea()

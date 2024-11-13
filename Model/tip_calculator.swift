@@ -11,14 +11,12 @@ struct tip_calculator: View {
     @State var total: String = ""
     @State var percentage: Double = 15.0
     var body: some View {
-        ZStack{
-             LinearGradient(gradient:
-                                Gradient(colors: [ .white, .light, .dark]),
-                               startPoint: .topLeading,
-                               endPoint: .bottomTrailing)
-                    .ignoresSafeArea()
-            
-            
+//        ZStack{
+//             LinearGradient(gradient:
+//                                Gradient(colors: [ .white, .light, .dark]),
+//                               startPoint: .topLeading,
+//                               endPoint: .bottomTrailing)
+//                    .ignoresSafeArea()
             VStack {
                 HStack{
                     Image(systemName: "dollarsign.circle")
@@ -53,7 +51,7 @@ struct tip_calculator: View {
                 }
             }
             .padding()
-        }
+//        }
     }
 }
 

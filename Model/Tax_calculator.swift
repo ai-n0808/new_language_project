@@ -13,9 +13,21 @@ struct TaxCalculator: View {
     
     var body: some View {
         VStack {
-            Text("Tax Calculator")
-                .font(.title)
-                .fontWeight(.bold)
+            HStack{
+                Image(systemName: "yensign.square.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.myblue)
+                    .font(.title)
+                
+                Text("Tax Calculator")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Image(systemName: "yensign.square.fill")
+                    .imageScale(.large)
+                    .foregroundStyle(.myblue)
+                    .font(.title)
+            }
             
             HStack {
                 Text("¥")
