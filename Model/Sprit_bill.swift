@@ -42,12 +42,11 @@ struct BillSplitterView: View {
                 }
                 .pickerStyle(WheelPickerStyle())
                 Spacer()
-
-                TextField("Type your bill amount", text: $billAmount)
-                    .padding(.horizontal)
-                    .font(.system(size: 20))
-                    .multilineTextAlignment(.center)
-                Spacer()
+                HStack{
+                    TextField("Type your bill amount", text: $billAmount)
+                        .font(.system(size: 20))
+                        .multilineTextAlignment(.center)
+                }
                 
                 
                 Text("Per person: $\(amountPerPerson, specifier: "%.2f")")

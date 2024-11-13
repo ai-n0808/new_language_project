@@ -32,8 +32,6 @@ struct TaxCalculator: View {
             HStack {
                 Text("¥")
                 TextField("Amount", text: $total)
-                    .keyboardType(.decimalPad)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding()
             
@@ -44,12 +42,11 @@ struct TaxCalculator: View {
             .padding()
             
             if let totalNumber = Double(total) {
-                Text("Tax: ¥\(totalNumber * percentage / 100, specifier: "%.2f")")
+                Text("Tax: ¥\(totalNumber * percentage / 100, specifier: "%.f")")
                     .font(.title2)
                     .padding()
             } else {
                 Text("Please enter a valid amount")
-                    .foregroundColor(.red)
                     .padding()
             }
         }

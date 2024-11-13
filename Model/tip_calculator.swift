@@ -42,6 +42,7 @@ struct tip_calculator: View {
                     Text("Tip: $\(totalNumber * percentage / 100, specifier: "%0.2f")")
                 } else {
                     Text("Please type your cost")
+                        .padding()
                 }
             }
             .padding()
