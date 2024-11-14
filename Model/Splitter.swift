@@ -29,6 +29,7 @@ struct BillSplitterView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
+                    .padding(.top)
                 
                 Text("How many people?")
                     .font(.title)

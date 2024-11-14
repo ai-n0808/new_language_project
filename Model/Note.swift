@@ -67,7 +67,7 @@ struct DebtTrackerView: View {
                         HStack {
                             Text(debt.name)
                             Spacer()
-                            Text("$\(debt.amount, specifier: "%.2f")")
+                            Text("¥\(debt.amount, specifier: "%.f")")
                                 .foregroundColor(debt.isOwedToYou ? .green : .red)
                         }
                     }
