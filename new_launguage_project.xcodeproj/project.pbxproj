@@ -42,7 +42,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Note.swift,
-				Sprit_bill.swift,
+				Splitter.swift,
 				Tax_calculator.swift,
 				tip_calculator.swift,
 			);

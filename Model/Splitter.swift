@@ -1,8 +1,8 @@
 //
-//  Sprit_bill.swift
+//  Splitter.swift
 //  new_launguage_project
 //
-//  Created by Ai on 2024/11/11.
+//  Created by Ai on 2024/11/14.
 //
 
 import SwiftUI
@@ -65,4 +65,3 @@ struct BillSplitterView_Previews: PreviewProvider {
         BillSplitterView()
     }
 }
-
