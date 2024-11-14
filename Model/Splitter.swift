@@ -49,7 +49,7 @@ struct BillSplitterView: View {
                 }
                 
                 
-                Text("Per person: $\(amountPerPerson, specifier: "%.2f")")
+                Text("Per person: ¥\(amountPerPerson, specifier: "%.f")")
                     .fontWeight(.bold)
                     .padding()
                     .font(.system(size: 30))
