@@ -59,6 +59,9 @@ struct DebtTrackerView: View {
                     }
                 }
                 
+                .scrollContentBackground(.hidden)
+
+                
                 List {
                     ForEach(viewModel.debts) { debt in
                         HStack {
@@ -70,11 +73,14 @@ struct DebtTrackerView: View {
                     }
                     .onDelete(perform: viewModel.removeDebt)
                 }
+                .scrollContentBackground(.hidden)
+
             }
             .navigationTitle("Tracker")
             .toolbar {
                 EditButton()
             }
+
           }
         }
     }
